@@ -1,6 +1,14 @@
 .App {
   text-align: center;
 }
+.p-dialog .p-dialog-header {
+  border-bottom: 0 none;
+  background: #ffffff;
+  color: #495057;
+  padding: 1rem;
+  border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
+}
 
 .App-logo {
   height: 40vmin;
