@@ -27,7 +27,7 @@ const UpdateUser = () => {
     <div style={{ maxWidth: '600px', margin: '0 auto' }}>
     <form onSubmit={handleSubmit}>
     <div className="w-full mb-2">
-      <label className="block text-black dark:text-white">
+      <label className="block text-black">
         Name <span className="text-red-700">*</span>
       </label>
       <input
@@ -40,7 +40,7 @@ const UpdateUser = () => {
       />
     </div>
     <div className="w-full mb-2">
-      <label className="block text-black dark:text-white">
+      <label className="block text-black">
         User Name <span className="text-red-700">*</span>
       </label>
       <input
@@ -53,7 +53,7 @@ const UpdateUser = () => {
       />
     </div>
     <div className="w-full mb-2">
-      <label className="block text-black dark:text-white">
+      <label className="block text-black">
         Email <span className="text-red-700">*</span>
       </label>
       <input
@@ -66,7 +66,7 @@ const UpdateUser = () => {
       />
     </div>
     <div className="w-full mb-2">
-      <label className="block text-black dark:text-white">
+      <label className="block text-black">
         Phone <span className="text-red-700">*</span>
       </label>
       <input
@@ -79,7 +79,7 @@ const UpdateUser = () => {
       />
     </div>
     <div className="w-full mb-4">
-      <label className="block text-black dark:text-white">
+      <label className="block text-black">
         Website <span className="text-red-700">*</span>
       </label>
       <input

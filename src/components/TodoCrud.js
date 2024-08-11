@@ -86,7 +86,10 @@ const TodoCrud = () => {
       header={"User Create"}
       visible={showInsertDialog}
       style={{width: "50vw"}}
-      onHide={() => dispatch(setShowInsertDialog(false))}>
+      onHide={() => {
+        dispatch(resetFormData());
+        dispatch(setShowInsertDialog(false));
+      }}>
         <InsertUser/>
       </Dialog>
 
@@ -97,7 +100,10 @@ const TodoCrud = () => {
       header={"User Update"}
       visible={showUpdateDialog}
       style={{width: "50vw"}}
-      onHide={() => dispatch(setShowUpdateDialog(false))}>
+      onHide={() => {
+        dispatch(resetFormData());
+        dispatch(setShowUpdateDialog(false));
+      }}>
         <UpdateUser />
       </Dialog>
 
@@ -105,7 +111,7 @@ const TodoCrud = () => {
       <Dialog
       visible={showDeleteDialog.visible}
       className='custom-dialog'
-      onHide={() => setShowDeleteDialog({visible: false, id: 0})}
+      onHide={() => dispatch(setShowDeleteDialog({visible: false, id: 0}))}
       style={{width: "25vw"}}
       header="Are you want to delete user?"
       footer={
